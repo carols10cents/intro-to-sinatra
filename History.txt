@@ -1,0 +1,17 @@
+# These instructions assume you already have ruby 1.9.2 and bundler installed
+# on your system in your manner of choice and that your PATH is set up to
+# use them.
+
+# Create a new directory for this project and go into it.
+$ mkdir intro-to-sinatra
+$ cd intro-to-sinatra
+
+# Initialize a new git repository here.
+$ git init .
+
+# Create a Gemfile that contains sinatra and use bundler to install it:
+$ bundle install
+
+# Add your Gemfile and Gemfile.lock to git and make your first commit:
+$ git add Gemfile Gemfile.lock
+$ git commit -m "Creating a Gemfile containing sinatra"
