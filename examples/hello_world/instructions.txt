@@ -25,3 +25,7 @@ $ ruby hello_world.rb
 
 # Go to localhost:4567 in your browser!
 # Ctrl-c to stop the server.
+
+# If you make a change, you will need to stop and restart the server to see
+# the effects. If you get tired of doing that, use the reloader:
+# http://www.sinatrarb.com/contrib/reloader
