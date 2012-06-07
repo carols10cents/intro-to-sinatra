@@ -1,3 +1,3 @@
-require "examples/http_verbs/hello"
+require "./examples/http_verbs/hello"
 
 run Sinatra::Application
