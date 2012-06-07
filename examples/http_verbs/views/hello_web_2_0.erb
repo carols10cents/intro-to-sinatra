@@ -1,0 +1,56 @@
+<!-- CSS from http://girliemac.com/blog/2009/04/30/css3-gradients-no-image-aqua-button/ -->
+<style type="text/css">
+  #content {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+  }
+
+  .button{
+    width: 600px;
+    margin: 100px auto;
+    padding: 5px 16px 3px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    position: relative;
+    font-family: Lucida Sans, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .aqua{
+    background-color: rgba(60, 132, 198, 0.8);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9)));
+    border-top-color: #8ba2c1;
+    border-right-color: #5890bf;
+    border-bottom-color: #4f93ca;
+    border-left-color: #768fa5;
+    -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
+    -moz-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px; /* FF 3.5+ */
+  }
+
+  .button .glare {
+    position: absolute;
+    top: 0;
+    left: 11px;
+    border-radius: 17px;
+    height: 1px;
+    width: 609px;
+    padding: 19px 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+  }
+
+  .drop-shadow {
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  }
+
+</style>
+<div id="content">
+  <div class="button aqua drop-shadow">
+    <div class="glare"></div>
+    Hello, <%= @name%>. It's 2010.
+  </div>
+</div>
